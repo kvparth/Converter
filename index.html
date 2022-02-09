@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Converter</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="container">
+        <h1>CONVERTER</h1>
+        <div id="conversion">
+        <label for="From">From
+        <select name="from" id="from" required>
+            <option value="2" id="fromBinary">Binary</option>
+            <option value="10" id="fromDecimal">Decimal</option>
+            <option value="16" id="fromHexadecimal">Hexadecimal</option>
+            <option value="8" id="fromOctal">Octal</option>
+        </select>
+    </label>
+        <label for="To">To
+        <select name="to" id="to">
+            <option value="2" id="toBinary">Binary</option>
+            <option value="10" id="toDecimal" om>Decimal</option>
+            <option value="16" id="toHexadecimal">Hexadecimal</option>
+            <option value="8" id="toOctal">Octal</option>
+        </select>
+    </label>
+</div>
+        <div><h3 style="display: inline;">enter the number to convert:  </h3><input type="text" id="frominput"></div>
+        <div id="buttons">
+        <button type="submit" id="convert" onclick="convert()">Convert</button>
+    <button type="submit" id="swap" onclick="swap()">Swap</button>
+    </div>
+   
+</div>
+<div id="result"> <h2 style="margin: 0%;"> Result: </h2>
+    <textarea name="result" id="toinput" style="background-color: wheat;"></textarea></div>
+
+    <script src="index1.js"></script>
+    
+</body>
+</html>

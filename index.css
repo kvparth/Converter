@@ -1,0 +1,37 @@
+#result{
+    display: none;
+    background-color: black;
+    color: white;
+    width: 200px;
+    margin-left: 50px;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 350px;
+    background-color: lightblue;
+    border: 2px solid;
+    padding-top: 50px;
+    margin: 50px;
+    
+}
+#conversion{
+    margin: 50px;
+    display: flex;
+    justify-content: flex-start;
+}
+#convert,#swap{
+    margin:50px;
+    background-color: yellowgreen;
+    width: 100px;
+    height: 40px;
+}
+#frominput{
+    border-radius: 20px;
+    border: 1px solid;
+}
+#from{
+    margin-right: 40px;
+}
