@@ -27,13 +27,13 @@ function swap(){
     document.getElementById("from").value=from;
     document.getElementById("to").value=to;
 }
-document.getElementById("frominput").addEventListener("keypress",(e)=>{
-    if(e.key<from && e.key>=0){   
-    }
-    else{
-        alert(`enter value less than ${from}`);
-        document.getElementById("frominput").value=fromValue.slice(0,-1);
-    }        
-});
+// document.getElementById("frominput").addEventListener("keypress",(e)=>{
+//     if(e.key<from && e.key>=0){   
+//     }
+//     else{
+//         alert(`enter value less than ${from}`);
+//         document.getElementById("frominput").value=fromValue.slice(0,-1);
+//     }        
+// });
 
 
