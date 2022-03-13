@@ -14,8 +14,23 @@ function convert(){
     var toValue = (fromValue,from,to)=>{
     return parseInt(fromValue,from).toString(to);
 }
-    document.getElementById("toinput").innerHTML=toValue(fromValue,from,to);
-    document.getElementById("result").style.display="block";
+    var result=toValue(fromValue,from,to);
+    
+    if(isNaN(result)){
+        alert("please enter a number to convert");
+        document.getElementById("frominput").value="";
+       
+    }
+    else{
+        console.log(result);
+        document.getElementById("toinput").innerHTML=result;
+        document.getElementById("result").style.display="block";
+        document.getElementById("frominput").value="";
+        
+    }
+    
+
+    
     
 }
 function swap(){
